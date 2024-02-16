@@ -1,0 +1,355 @@
+:root {
+  --main-color: #2e528e;
+  --main-white: white;
+  --main-black: black;
+  --main-fonts1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --main-fonts2: "Urbanist, sans-serif;";
+}
+body {
+  background-image: url("https://saurav.eu.org/mh/wp-content/themes/conbix/assets/img/shape/about.png");
+}
+.page__banner {
+  position: relative;
+  background-image: url("../assets/contact-us.jpeg");
+  height: 450px;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5.5rem;
+  /* padding-bottom: 280px; */
+  overflow: hidden;
+}
+.page__banner::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/page-banner-bg2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  left: 80;
+  top: 0;
+  z-index: -2;
+}
+.page__banner-content {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.page__banner-content ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.page__banner-content ul li {
+  display: inline-block;
+  list-style: none;
+  font-weight: 700;
+  color: var(--main-white) !important;
+}
+
+.page__banner-content ul li a {
+  color: var(--main-white);
+  margin-right: 15px;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.page__banner-content ul li a:hover {
+  color: var(--main-color) !important;
+}
+.page__banner-content ul li span {
+  margin-right: 15px;
+  color: var(--main-white);
+}
+.page__banner-content h1 {
+  color: var(--main-white);
+  font-size: 70px;
+  line-height: 80px;
+}
+.page__banner-content h1 span {
+  color: var(--main-color);
+}
+.page__banner-content > span {
+  color: var(--main-white);
+  display: block;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 144px;
+  opacity: 0.08;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  margin: 0 0 -80px 0;
+  position: relative;
+  z-index: -1;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+/* ------------------------------------------------------section2------------------------------------------------------- */
+
+.section-2-all-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: 5em;
+}
+/* .section-2-all-box>div:nth-child(1){
+    width: 30%;
+    height: 30%;
+} */
+.section-2-print-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 4rem;
+  width: 33%;
+  height: 400px;
+  cursor: pointer;
+}
+.section-2-print-box:hover {
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+.section-2-print-box:hover .section-2-text,
+.section-2-print-box:hover .outline-mail,
+.section-2-print-box:hover .section-2-icon i,
+.section-2-print-box:hover .section-2-place,
+.section-2-print-box:hover .section-2-place-2 {
+  color: var(--main-white);
+  transition: 0.5s;
+}
+
+.section-2-icon {
+  margin: auto;
+  text-align: center;
+}
+.section-2-icon i,
+.outline-mail {
+  font-size: 50px;
+  color: rgb(95, 94, 94);
+}
+.section-2-text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--main-fonts1);
+  font-size: 18px;
+  color: rgb(35, 34, 34);
+}
+
+.section-2-two-text {
+  margin-top: 10px;
+  color: rgb(105, 101, 101);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-2-two-text > p:nth-child(2),
+.section-2-two-text > p:nth-child(3) {
+  margin-top: 10px;
+  color: rgb(105, 101, 101);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-2-place {
+  font-weight: bold;
+}
+.section-2-place-2 {
+  line-height: 1.5rem;
+}
+.section-2-two-text-2 {
+  margin-top: 20px;
+  color: rgb(105, 101, 101);
+}
+/* -----------------------------------------------------------section3 ------------------------------------------------------------ */
+
+.section-swipper {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  margin-top: 7rem;
+  padding: 3rem 10px;
+}
+.section-swipper-text {
+  text-align: center;
+  font-size: 50px;
+}
+.card__container {
+  margin-top: 3rem;
+}
+.card__container img {
+  opacity: 0.8;
+  /* height: 180px; */
+}
+.card__container img:hover {
+  opacity: 1;
+}
+
+/* ----------------------------------------------------------section4----------------------------------------------------------------------- */
+.section-contact-form {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 4rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 28rem;
+  padding-bottom: 30px;
+}
+.section-contact-form-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: var(--main-color);
+  padding-top: 4rem;
+}
+.section-contact-form-line {
+  display: grid;
+  gap: 10px;
+}
+.section-contact-form-line hr {
+  border: 2px solid var(--main-color);
+  width: 40px;
+  height: 0;
+}
+.section-contact-form-text p {
+  font-family: var(--main-fonts1);
+  text-align: center;
+  font-weight: 600;
+}
+.section-contact-form-text-2 {
+  text-align: center;
+  font-size: 35px;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+.section-form {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+}
+.section-form-input {
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+.section-form-input > input {
+  width: 50%;
+}
+.section-form input,
+.section-form textarea {
+  padding: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(173, 169, 169);
+}
+.section-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border: none;
+  color: var(--main-white);
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section-form button:hover {
+  background-color: var(--main-white);
+  color: var(--main-black);
+  border: 1px solid var(--main-color);
+}
+.alertbox{
+  text-align: center;
+}
+
+/* --------------------------------- Media Queries------------------------------------------------------------------------ */
+
+@media (max-width: 1025px) {
+  .page__banner {
+    position: relative;
+    background-image: url("../assets/contact-us.jpeg");
+    height: 450px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5.6rem;
+    /* padding-bottom: 280px; */
+    overflow: hidden;
+  }
+  .section-2-all-box {
+    width: 95%;
+    gap: 15px;
+  }
+  .section-contact-form-text-2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .section-2-all-box {
+    width: 95%;
+  }
+  .section-2-print-box {
+    padding: 2rem;
+    height: 300px;
+  }
+  .section-2-place {
+    font-size: 10px;
+  }
+  .section-2-place-2 {
+    font-size: 10px;
+  }
+  .section-2-text {
+    font-size: 12px;
+  }
+  .section-contact-form-text {
+    font-size: 12px;
+  }
+  .section-contact-form-line hr {
+    width: 30px;
+  }
+  .section-contact-form-text-2 {
+    font-size: 15px;
+  }
+  .section-contact-form {
+    width: 90%;
+  }
+}
+@media (max-width: 426px) {
+  .page__banner-content {
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+  .section-2-all-box {
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    width: 95%;
+    margin: auto;
+    margin-top: 5em;
+  }
+  .section-2-print-box {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    height: 300px;
+  }
+  .section-2-place {
+    font-size: 10px;
+  }
+  .section-2-place-2 {
+    font-size: 10px;
+  }
+  .section-2-text {
+    font-size: 12px;
+  }
+  .section-contact-form{
+    margin-bottom: 0;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}

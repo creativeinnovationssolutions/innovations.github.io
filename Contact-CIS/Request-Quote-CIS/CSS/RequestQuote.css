@@ -1,0 +1,200 @@
+:root {
+    --main-color: #2e528e;
+    --main-white: white;
+    --main-black: black;
+    --main-fonts1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    --main-fonts2: "Urbanist, sans-serif;";
+  }
+  body {
+    background-image: url("https://saurav.eu.org/mh/wp-content/themes/conbix/assets/img/shape/about.png");
+  }
+  .page__banner {
+    position: relative;
+    background-image: url("https://img.freepik.com/photos-premium/gens-affaires-creatifs-travaillant-projet-dans-bureau-moderne-vue-panoramique_362389-7006.jpg?w=2000");
+    height: 450px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 6rem;
+    /* padding-bottom: 280px; */
+    overflow: hidden;
+  }
+  .page__banner::before {
+    content: "";
+    position: absolute;
+    background-image: url("/Contact-Mindhind/assets/page-banner-bg3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .page__banner-content {
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .page__banner-content ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .page__banner-content ul li {
+    display: inline-block;
+    list-style: none;
+    /* color:  #2e528e; */
+    font-weight: 700;
+    
+  }
+  .page__banner-contact-us{
+    color: var(--main-white);
+  }
+  .page__banner-content ul li a {
+    color: var(--main-white);
+    margin-right: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+  }
+  .page__banner-content ul li a:hover {
+    color: var(--main-color);
+  }
+  .page__banner-content ul li span {
+    margin-right: 15px;
+    color: var(--main-white);
+  }
+  .page__banner-content h1 {
+    color: var(--main-white);
+    font-size: 50px;
+    line-height: 80px;
+    width: 30%;
+  }
+  .page__banner-content h1 span {
+    color: var(--main-color);
+  }
+  .page__banner-content > span {
+    color: var(--main-white);
+    display: block;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 144px;
+    opacity: 0.08;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    margin: 0 0 -80px 0;
+    position: relative;
+    z-index: -1;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+  }
+
+/* --------------------------------------------------------------------- Section Form------------------------------------------------------------------------ */
+.request-quote-form{
+  margin-bottom: 30rem;
+}
+.section-2-form{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+    /* border: 1px solid red; */
+}
+.section-2-form label{
+    font-family: var(--main-fonts1);
+    color: rgb(60, 60, 60);
+}
+.section-2-form input[type="text"],.section-2-form input[type="email"],.section-2-form input[type="number"] {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid rgb(173, 172, 172);
+    border-radius: 5px;
+    outline: none;
+}
+.section-2-form-box-1{
+    display: flex;
+    align-items: center;
+}
+.section-2-form-box-1-child-label-input{
+    width: 100%;
+    display: grid;
+    padding: 20px;
+}
+.section-2-form-box-1-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.section-2-services{
+    font-weight: 600;
+    color: rgb(59, 57, 57);
+}
+.section-2-form-box-1-2-services {
+    padding: 20px;
+}
+.section-2-services-checkbox{
+    margin-top: 20px;
+}
+.section-2-form-box-1-child-label-input textarea{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+.section-2-form-button{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.section-2-form-button>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    width: 150px;
+    font-family: var(--main-fonts1);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--main-white);
+    border: 1px solid var(--main-color);
+    transition: .9s;
+}
+.section-2-form-button>button:hover{
+
+    background-color: var(--main-white);
+    color: var(--main-black);
+    border: 1px solid var(--main-color);
+    /* transition: .5s; */
+}
+@media (max-width:769px){
+  .request-quote-form{
+    margin-bottom: 0rem;
+  }
+}
+@media (max-width:426px){
+    .section-2-form-box-1{
+       flex-direction: column;
+    }
+    .page__banner-content {
+        margin-top: 150px;
+        margin-left: 70px;
+      }
+
+}
+@media (max-width:321px){
+    .section-2-form-box-1{
+       flex-direction: column;
+    }
+    .page__banner-content {
+        margin-top: 150px;
+        margin-left: 20px;
+      }
+}

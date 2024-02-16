@@ -1,0 +1,124 @@
+:root {
+  --main-color: #2e528e;
+  --main-white: white;
+  --main-black: black;
+  --main-fonts1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --main-fonts2: "Urbanist, sans-serif;";
+}
+body {
+  background-image: url("https://saurav.eu.org/mh/wp-content/themes/conbix/assets/img/shape/about.png");
+}
+.testimonials-section-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 28em;
+}
+.testimonials-section-2-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+}
+.testimonials-section-2-box-image-text-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.testimonials-section-2-image img {
+  width: 70px;
+  border-radius: 50px;
+}
+.testimonials-section-2-text-icons {
+  display: grid;
+  gap: 10px;
+}
+.testimonials-section-2-text-icons > p {
+  font-weight: 600;
+  font-family: var(--main-fonts1);
+  font-size: 18px;
+  color: rgb(48, 46, 46);
+}
+.testimonials-section-2-text-icons i {
+  color: var(--main-color);
+  font-size: 18px;
+}
+.testimonials-section-2-text {
+  margin-top: 20px;
+}
+.testimonials-section-2-text p {
+  margin-top: 20px;
+  line-height: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.9;
+}
+.testimonials-section-2-traingle-with-box {
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .testimonials-section-2-box-text {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  .testimonials-section-2-box-text::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    left: 20%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(86, 83, 83, 0.05); /* Match box shadow color */
+    z-index: 0;
+    
+  }
+  
+  .testimonials-section-2-box-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .testimonials-section-2-traingle-with-box-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .testimonials-section-2-traingle-with-box-text p {
+    margin-top: 3px;
+    font-size: 17px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.8;
+  }
+  
+/* ============================================================================ Media Queries ================================================================ */
+@media (max-width:1025px){
+  .testimonials-section-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+  }
+}
+@media (max-width:769px){
+  .testimonials-section-2{
+    width: 90%;
+    margin-bottom: 0;
+   
+  }
+}
+@media (max-width:426px){
+  .testimonials-section-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}

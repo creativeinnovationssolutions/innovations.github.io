@@ -1,0 +1,254 @@
+:root {
+  --main-color: #cdbb55;
+  --main-white: white;
+  --main-black: black;
+  --main-fonts1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --main-fonts2: "Urbanist, sans-serif;";
+}
+body {
+  background-image: url("https://saurav.eu.org/mh/wp-content/themes/conbix/assets/img/shape/about.png");
+}
+.page__banner {
+  position: relative;
+  background-image: url("https://img.freepik.com/photos-premium/gens-affaires-creatifs-travaillant-projet-dans-bureau-moderne-vue-panoramique_362389-7006.jpg?w=2000");
+  height: 450px;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 5rem;
+  /* padding-bottom: 280px; */
+  overflow: hidden;
+}
+.page__banner::before {
+  content: "";
+  position: absolute;
+  /* background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-image: url("/Contact-CIS/assets/page-banner-bg2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+.page__banner-content {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.page__banner-content ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.page__banner-content ul li {
+  display: inline-block;
+  list-style: none;
+  color: var(--main-white);
+  font-weight: 700;
+}
+.page__banner-content ul li a {
+  color: var(--main-white);
+  margin-right: 15px;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.page__banner-content ul li a:hover {
+  color: var(--main-color);
+}
+.page__banner-content ul li span {
+  margin-right: 15px;
+  color: var(--main-white);
+}
+.page__banner-content h1 {
+  color: var(--main-white);
+  font-size: 60px;
+  line-height: 80px;
+}
+.page__banner-content h1 span {
+  color: var(--main-color);
+}
+.page__banner-content > span {
+  color: var(--main-white);
+  display: block;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 144px;
+  opacity: 0.08;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  margin: 0 0 -80px 0;
+  position: relative;
+  z-index: -1;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+/* ----------------------------------- */
+
+.last-section-blog-1 {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5rem 0rem 5rem 0rem;
+}
+.last-section-blog-text-with-line-1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.last-section-blog-line-1 {
+  display: grid;
+  gap: 10px;
+}
+.last-section-blog-1 hr {
+  display: grid;
+  width: 40px;
+  border: 1.5px solid var(--main-color);
+}
+.last-section-blog-text-with-line-1 p {
+  color: var(--main-color);
+  font-family: var(--main-fonts1);
+  font-weight: 600;
+  font-size: 17px;
+}
+.last-section-blog-text-with-btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.last-section-blog-text-with-btn-1 > h1 {
+  font-size: 40px;
+}
+/* ----------------------------------------- */
+.blog-wrapper {
+  width: 80%;
+  margin: 0 auto 25rem auto;
+}
+#dataContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 30% 67%);
+  /* align-items: center; */
+  gap: 40px;
+}
+
+/* #dataContainer div {
+} */
+.img-div {
+  /* height: 300px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0px 80px 0px 80px;
+}
+.img-div img {
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 80px 0px 80px;
+}
+.text-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  
+}
+.text-des h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+  font-family: var(--main-fonts1);
+  margin-bottom: 1rem;
+}
+.text-des p {
+  font-size: 17px;
+  font-weight: 200;
+  font-family: var(--main-fonts2);
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+@media only screen and (max-width: 1050px){
+  .blog-wrapper {
+  width: 80%;
+  margin: 0 auto 29rem auto;
+}
+#dataContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 33% 65%);
+  /* align-items: center; */
+  gap: 40px;
+}
+.text-des h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.text-des p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+}
+
+@media only screen and (max-width: 769px){
+   .blog-wrapper {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+#dataContainer {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* align-items: center; */
+  gap: 40px;
+}
+.text-des h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.text-des p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+}
+
+@media only screen and (max-width: 426px) {
+   .page__banner-content {
+    margin-top: 150px;
+    margin-left: 60px;
+  }
+  .text-des h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-des p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+}
+
+@media only screen and (max-width: 320px){
+   .text-des h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.text-des p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.9;
+}
+}
+
+
+@media (max-width: 676px) {
+  .page__banner-content {
+    margin-top: 180px;
+    margin-left: 60px;
+  }
+}
