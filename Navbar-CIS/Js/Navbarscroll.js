@@ -144,28 +144,28 @@ function handleHome(){
     window.location.href = "/"
 }
 function handleSolution(){
-    window.location.href = "/Solutions-CIS"
+    window.location.href = "../../Solutions-CIS/Solutions.html"
 }
 
 function handleAbout(){
-    window.location.href = "/About-us-CIS"
+    window.location.href = "/About-us-CIS/About.html"
 }
 function handleFaqs(){
-    window.location.href = "/About-us-CIS/Faqs-CIS"
+    window.location.href = "/About-us-CIS/Faqs-CIS/Faqs.html"
 }
 function handleTestimonials(){
-    window.location.href = "/About-us-CIS/Testimonials-CIS"
+    window.location.href = "/About-us-CIS/Testimonials-CIS/Testimonial.html"
 }
 function handleBlog(){
-    window.location.href = "/Blog-CIS"
+    window.location.href = "/Blog-CIS/Blog.html"
 }
 function handlePortfolio(){
-window.location.href = "/Portfolio-CIS";
+window.location.href = "/Portfolio-CIS/Portfolio.html";
 }
 function handleContact(){
-    window.location.href = "/Contact-CIS"
+    window.location.href = "/Contact-CIS/Contact.html"
 }
 function handleRequestQuote(){
     // alert('s')
-    window.location.href = "/Contact-CIS/Request-Quote-CIS"
+    window.location.href = "/Contact-CIS/Request-Quote-CIS/Request-Quote.html"
 }

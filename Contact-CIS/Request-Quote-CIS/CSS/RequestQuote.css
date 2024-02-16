@@ -18,14 +18,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 6rem;
+    margin-top: 5rem;
     /* padding-bottom: 280px; */
     overflow: hidden;
   }
   .page__banner::before {
     content: "";
     position: absolute;
-    background-image: url("/Contact-Mindhind/assets/page-banner-bg3.png");
+    background-image: url("/Contact-CIS/assets/page-banner-bg2.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;

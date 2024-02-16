@@ -34,7 +34,10 @@ let footer_js = `<div class="top-footer-1">
 <div class="mind-hind-footer-parent">
     <div class="mind-hind-footer-child1">
         <div class="mind-hind-footer-child1-subchild">
-            <img src="http://192.168.43.6:5503/Navbar-CIS/assets/creative_innovations2.png" alt="logo">
+        <img img fetchpriority="high" width="120"
+        src="/Navbar-CIS/assets/creative_innovations2.png"
+        class="attachment-full size-full wp-image-1249" alt="revenue rushy logo"
+        sizes="(max-width: 1080px) 100vw, 1080px">
         </div>
         <div class="mind-hind-footer-child1-subchild2">
             <p>Behind The Word Mountains, Far From The Countries Vokalia And Consonantia, There Live The Blind
